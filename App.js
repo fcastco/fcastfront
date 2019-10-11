@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
+import DropZone from './DropZone';
+import ZipForm from './ZipForm';
+
 
 function App() {
   return (
@@ -10,8 +13,7 @@ function App() {
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="../">FCast | Share files securely
-                        </a>
+                        <a class="navbar-item" href="../">FCast | Share files securely</a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
                             <span></span>
@@ -47,11 +49,8 @@ function App() {
                           Upload your files below
                       </h2>
                       <br></br>
-                        <p class="has-text-centered">
-                            <a class="button is-medium is-info is-outlined">
-                                Learn more
-                            </a>
-                        </p>
+                          <DropZone />
+                          <ZipForm />
                     </div>
                 </div>
             </div>
